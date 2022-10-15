@@ -2,11 +2,10 @@
 
 describe('Funcionalidade: Cadastro via API', () => {
 
-    it('[POST] - Deve fazer um cadastro com sucesso', () => {
-     let email = `fabio${Math.floor(Math.random() * 100000000)}@dojo.com`
-    
+    it('[PUT] - Curte um post com o usuário informado no token do header.', () => {
+     
         cy.request({
-            method: 'POST',
+            method: 'PUT',
             url: 'api/users',
             body: {
                 "name": "Fábio API",
