@@ -14,7 +14,7 @@ it('Cadastro com sucessos', () => {
     cy.get('[data-test="register-password"] > .MuiInputBase-root > .MuiInputBase-input').type('CalcinhaPreta')
     cy.get('[data-test="register-password2"] > .MuiInputBase-root > .MuiInputBase-input').type('CalcinhaPreta{enter}')
 
-    cy.get('[data-test="dashboard-welcome"]').should('contain', 'Bem-vindo' + nome)
+    cy.get('[data-test="dashboard-welcome"]').should('contain', 'Bem-vindo ' + nome)
 
 });
 
